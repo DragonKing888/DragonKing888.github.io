@@ -1,0 +1,258 @@
+
+/*=========================
+    Responsive Style
+==========================*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .header-top-seller {padding-left: 20px;}
+    .follow-btn .follow{font-size: 10px;}
+    .single-art-img {height: 300px;}
+    section, .nft-art {padding-top: 40px; }
+    .action-slider.owl-carousel.owl-theme .owl-dots .owl-dot span, .topcreator-slider.owl-carousel.owl-theme .owl-dots .owl-dot span, .homepagethree-slider.owl-carousel.owl-theme .owl-dots .owl-dot span{display: none;}
+    .single-nft-art{height: 380px;}
+    .header-img .header-three-img img {width: 390px;}
+    .homepagetwo.homepagethree.nft-art .nft-art-main-img {height: 450px;}
+    .nft-art.aboutus .nft-art-text{display: block !important;}
+    .nft-art-text, .single-user-info, .user-pay-history{padding-left: 10px;}
+    .about-video{min-height: 450px;}
+    .sell-rareart{padding: 40px 0px;}
+    .single-user-img{min-height: 500px;}
+    .art-work.art-workpage.homepagetwo .col-md-3.col-lg-3.col-sm-6{
+        width: 33%;
+    }
+}
+
+
+@media only screen and (min-width: 840px) and (max-width: 950px) {
+    .mobile-menu{
+        display: block;
+    }
+    header.header{
+        min-height: 720px;
+    }
+    .header-img-area{
+        display: none
+    }
+    .menu{
+        display: block;
+    }
+    
+
+
+
+}
+
+
+
+/* Tablet Layout: 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mobile-menu{
+        display: block;
+    }
+    .navbar-brand{display: none;}
+    section{padding-top: 80px;}
+    .header-wrap .header-text h1 {
+        font-size: 39px;
+        line-height: 50px;
+        margin-bottom: 25px;
+    }
+    .header-wrap .col-md-7 {
+        flex: 0 0 auto;
+        width: 80%;
+    }
+    .header-img-01 img {
+        width: 100%;
+    }
+    .nft-commmon-btn, .nft-weigth-btn{margin-right: 10px;}
+    .single-art-img {height: 210px;}
+    section {padding-top: 60px;}
+    .header-img-02 img {width: 70%;}
+    .single-art-reaction-btn .price-bid{
+        padding: 8px 20px;
+    }
+    .section-title {
+        margin-bottom: 40px;
+    }
+    .mean-container .mean-bar{position: fixed;z-index: 99;background: linear-gradient(97.48deg, #020129 27.37%, #FF006B 89.22%);}
+    
+    .header-img-area{
+        display: none
+    }
+    .action-slider.owl-carousel.owl-theme .owl-dots .owl-dot span, .topcreator-slider.owl-carousel.owl-theme .owl-dots .owl-dot span, .homepagethree-slider.owl-carousel.owl-theme .owl-dots .owl-dot span{display: none;}
+    .header-img .header-three-img img {width: 300px;}
+    .header-wrap .header-text p {font-size: 16px;}
+    .header.homepagethree{min-height: 700px;}
+    .section-title h2 {font-size: 30px;}
+    .single-new-item .single-art-bottom ul li {
+        font-size: 10px;
+        margin-top: 9px;
+    }
+    .follow-btn{display: none;}
+    .nft-art-text h2, .sell-rareart h2 {font-size: 40px;}
+    .nft-art-text{padding-left: 30px;}
+    .homepagetwo.homepagethree.nft-art .nft-art-main-img {height: 360px;}
+    .homepagetwo.homepagethree.nft-art{margin-top: 0px;}
+    .nft-art{padding: 20px 0px;}
+    footer .footer-link h4 {font-size: 17px;}
+    footer .footer-link ul li a{font-size: 15px;}
+    .header.art-workpage .header-wrap{min-height: 360px;}
+    .nft-art.aboutus .col-md-7.col-sm-12.col-lg-7, .nft-art.aboutus .col-md-5.col-sm-12.col-lg-5{
+        width: 100%;
+        text-align: center;
+    }
+    .about-video{
+        min-height: 400px;
+    }
+    .single-user-img{min-height: 380px;}
+    .single-user-info, .user-pay-history {
+        padding-left: 0px;
+    }
+    .single-user-time{
+        padding-left: 15px;
+    }
+    .single-user-time .time{left: 60%;}
+    .bid-history-info {
+        padding-top: 10px;
+      }
+    .inner-search{display: none;}
+      .sidebar{margin-top: 30px;}
+    .art-work.art-workpage.homepagetwo .col-md-3.col-lg-3.col-sm-6{
+        width: 50%;
+    }
+    .blogpage .col-md-9,.blogpage .col-md-3{width: 100%;}
+    .post-descripton{width: 80%;}
+    .instragum-post li img{height: 130px;}
+    .sellyour-nft .section-title p {
+        width: 70%;}
+    footer .footer-link ul li a:hover{
+        padding-left: 0;
+    }
+
+
+}
+
+
+ /* Mobile Layout: 320px  */
+
+@media only screen and (max-width: 767px) {
+    .mobile-menu{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    body{overflow-x: hidden !important;width: 100%;}
+    p{font-size: 14px;line-height: 26px;}
+    section{padding-top: 40px;}
+    .section-title {margin-bottom: 40px;}
+    .section-title h2 {font-size: 26px;text-align: center;}
+    .usernav{visibility: hidden;}
+    .header-img-area{
+        display: none
+    }
+    header.header{min-height: 550px;}
+    .header-wrap {padding-top: 100px;}
+    .header-wrap .header-text h1, .header.homepagetwo h1 {font-size: 30px;line-height: 40px;margin-bottom: 10px;}
+    .header-wrap .header-text p {font-size: 16px;}
+    .nft-weigth-btn {padding: 10px 30px;}
+    .nft-commmon-btn {padding: 11px 20px;}
+    .nft-commmon-btn, .nft-weigth-bt{font-size: 14px;}
+    .main-counter{margin-top: 0;}
+    .header-img-01, .header-img-03 {visibility: hidden;}
+    .header-img-02 {width: 90%;animation: none;}
+    .header-img-02 img{width: 90%;}
+    .header-img-02 {left: -5%;bottom: 0%;}
+    .header-img-02:hover::before {top: -10px;left: 15px;}
+    @keyframes u{60%{ bottom: 2%;}}
+    .header-img-area{margin-top: -70px;}
+    .wallet .section-title p, .sellyour-nft .section-title p {width: 100%;text-align: center;}
+    .single-wallet{margin-bottom: 30px;padding: 20px 0px 20px 0px;}
+    .single-wallet h4 {font-size: 20px;}
+    .action-slider.owl-carousel.owl-theme .owl-dots .owl-dot span, .topcreator-slider.owl-carousel.owl-theme .owl-dots .owl-dot span, .homepagethree-slider.owl-carousel.owl-theme .owl-dots .owl-dot span{display: none;}
+    #art-work .select-area select{margin-top: 15px;}
+    .seller .section-title select{margin-top: 7px;padding: 4px 5px;}
+    .seller-item .seller-text h4 {font-size: 16px;}
+    .single-nft-sell{margin-bottom: 30px;}
+    .nft-art-text{padding-left: 0;min-height: 300px;}
+    .nft-art-text h2, .sell-rareart h2 {font-size: 30px;}
+    .nft-art, .sell-rareart{padding: 40px 0px;}
+    .sell-rareart h2, .sell-rareart p {width: 100%;}
+    .sell-rareart a {font-size: 14px;padding: 10px 20px;margin-right: 10px;}    
+    footer {padding: 40px 0px;text-align: center;}
+    .footer-logo .d-flex {display: flex !important;justify-content: center;}
+    .footer-form input{width: 150px;}
+    .nft-commmon-btn{margin-right: 10px;}
+    .single-art-img {height: 300px;}
+    .nft-item {text-align: left;overflow: auto;}
+    footer .footer-link h4 {font-size: 22px;margin: 10px 0px 10px 0px;}
+    .footer-form{margin-left: 0;}
+    .footer-form input[type="submit"], .footer-form input[type="text"]{
+        width: 100%;
+    }
+    .header-top-seller, .user-pay-history{padding-left: 0;}
+    .header.homepagetwo .header-img::before, .video-main-area::before, .inner-search {display: none;}
+    .homepagetwo-slider.owl-carousel.owl-theme .fa-arrow-left-long{left: 0;}
+    .homepagetwo-slider.owl-carousel.owl-theme .fa-arrow-right-long{right: 0;}
+    .homepagetwo.counter-area{padding: 40px 0px;background: transparent;}
+    .homepagetwo.counter-area .counter-main{margin-right: 0;margin-top: 25px;}
+    .homepagetwo.counter-area .d-flex.justify-content-center{display: inline !important;}
+    .homepagetwo.counter-area .counter-main .counter{font-size: 30px;}
+    .homepagetwoaction-slider .slider-team{margin-bottom: 30px;}
+    .action-slider-bottom {padding: 80px 10px 10px 10px;}
+    .sell-rareart p{padding-bottom: 25px;}
+    .single-nft-art{height: 430px;}
+    .nft-art-text h2{margin-bottom: 10px;}
+    .homepagetwo.sell-rareart h2, .homepagetwo.sell-rareart p, .homepagetwo.sell-rareart{width: 100%;text-align: center;}
+    .video-main-area{margin-top: 30px;}
+    .header-three-img img {width: 300px;}
+    .header-three-img-shape img{width: 150px;}
+    .homepagetwo.homepagethree.nft-art{padding-top: 10px;}
+    .homepagetwo.homepagethree.sellyour-nft, .art-work.art-workpage.homepagetwo{padding: 40px 0px;}
+    .video-main-area img {width: 100%;}
+    .header.art-workpage .header-wrap, .header.art-workpage{min-height: 150px;padding-top: 50px;}
+    .about-video{ min-height: 250px;}  
+    .innerpage-pagination .page-link{ padding: 10px;}
+    .single-user-img{min-height: 450px;}
+    .single-user-info {padding-left: 0px;padding-top: 30px;}
+    .single-ser-basic-info {padding: 10px 0px;}
+    .single-user-para p {line-height: 30px; margin-bottom: 15px;}
+    .single-user-time{display: none;}
+    .single-user-time .time{left: 50%;}
+    .singleblogpage{height: 540px;}
+    .sidebar {margin-top: 30px;}
+    .catagory h4, .top-post h4{font-size: 22px;}
+    .post-descripton {width: 80%;}
+    .blogpage.blogpost .main-blog{padding: 30px 20px;}
+    .share-option ul li {margin-left: 5px;padding: 5px;}
+    .contactpage-form, .loginform{padding: 15px ;}
+    .header.homepagetwo .header-wrap{padding-top: 0;}
+
+
+}
+
+
+ /* Wide Mobile Layout: 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .mobile-menu{
+        display: block;
+    }
+    section {padding-top: 60px;}
+    .header-img-02 img {width: 70%;}
+    .header-img-02::before {visibility: hidden;}
+    .header-wrap .header-text h1 {
+        font-size: 39px;
+        line-height: 50px;
+        margin-bottom: 25px;
+      }
+      .nft-commmon-btn, .nft-weigth-btn{margin-right: 10px;}
+      .single-art-img {height: 210px;}
+    .single-art-reaction-btn .price-bid{
+        padding: 8px 20px;
+    }
+
+
+
+   
+} 

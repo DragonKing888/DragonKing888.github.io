@@ -1,0 +1,2262 @@
+/* =======================
+   DEFULT STYLE START
+   ¸ü¶àÄ£°å£ºhttp://www.bootstrapmb.com
+==========================*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-image: linear-gradient(to right, #03032a, #03022a, #030229, #020129, #020129);
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style-type: none;
+}
+p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+}
+input:focus{
+    outline: none;
+}
+::placeholder{
+    font-size: 18px;
+}
+/* ===================
+    Common style 
+======================*/
+section{
+    padding-top: 140px;
+}
+.section-title {
+    margin-bottom: 80px;
+}
+.section-title h2{
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+}
+.nft-weigth-btn{
+    padding: 15px 60px;
+}
+.nft-commmon-btn{
+    padding: 15px 45px;
+}
+.nft-commmon-btn, .nft-weigth-btn{
+    border-radius: 30px;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 40px;
+    color: #333;
+    
+}
+.header-btn a.nft-commmon-btn{
+    background: #EA0066;
+    color: #fff;
+    border-color: #EA0066;
+}
+.nft-commmon-btn:hover, .nft-weigth-btn:hover{
+    background: #EA0066;
+    color: #fff;
+    border-color: #EA0066;
+}
+.header-btn a.nft-weigth-btn{
+    border-color: #fff;
+}
+.header-btn a.nft-weigth-btn:hover{
+    border-color: #EA0066;
+}
+
+
+/* ========================
+=========================== */
+.mobile-menu{
+    display: none;
+}
+.mobile-menu nav {
+    height: 50px;
+    padding: 0 16px;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.m-menu__toggle img{
+    width: 40px;
+    margin-top: 10px;
+}
+nav .m-menu__checkbox {
+    display: none;
+}
+nav label.m-menu__toggle {
+    cursor: pointer;
+}
+nav .m-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 450px;
+    width: calc(100vw - 30px);
+    height: 100%;
+    -moz-transform: translate3d(-450px, 0, 0);
+    -o-transform: translate3d(-450px, 0, 0);
+    -ms-transform: translate3d(-450px, 0, 0);
+    -webkit-transform: translate3d(-450px, 0, 0);
+    transform: translate3d(-450px, 0, 0);
+    -moz-transition: transform 0.35s;
+    -o-transition: transform 0.35s;
+    -webkit-transition: transform 0.35s;
+    transition: transform 0.35s;
+    z-index: 9999999999999;
+    overflow: hidden;
+    background-color: #fff;
+}
+.m-menu__toggle {
+    height: 40px !important;
+  }
+nav .m-menu__overlay {
+    background-color: rgba(103, 103, 103, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 600px;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+nav .m-menu__header {
+    padding: 0 16px;
+    height: 50px;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: space-around;
+    -webkit-align-items: center;
+    align-items: center;
+    border-bottom: 1px solid #e8e8e8;
+}
+nav .m-menu__header span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Akshar', sans-serif;
+    width: 100%;
+}
+nav .m-menu .m-menu {
+    -moz-transform: translate3d(480px, 0, 0);
+    -o-transform: translate3d(480px, 0, 0);
+    -ms-transform: translate3d(480px, 0, 0);
+    -webkit-transform: translate3d(480px, 0, 0);
+    transform: translate3d(480px, 0, 0);
+}
+.fa-xmark{
+    font-size: 30px;
+    margin-top: 8px;
+}
+nav .m-menu ul {
+    height: 100%;
+    overflow-y: auto;
+}
+nav .m-menu ul li{
+    list-style-type: none;
+    margin-left: 30px;
+}
+nav .m-menu ul li a, nav .m-menu ul li label {
+    display: block;
+    text-align: left;
+    padding: 0 0px;
+    line-height: 47px;
+    text-decoration: none;
+    font-family: 'Akshar', sans-serif;
+    color: #333;
+    cursor: pointer;
+    font-size: 1rem;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+}
+.m-menu ul li label{
+    padding: 0px 20px;
+}
+nav .m-menu ul li label.a-label__chevron::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-color: #333;
+    border-style: solid;
+    font-family: 'Akshar', sans-serif;
+    border-width: 1px 1px 0 0;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 50%;
+    margin-top: -5px;
+    right: 16px;
+}
+nav .m-menu ul li .-invisible {
+    border-bottom: 0;
+}
+nav .m-menu .m-menu label.m-menu__toggle {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    border-bottom: 0;
+    padding: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 500px;
+}
+nav .m-menu__checkbox:checked ~ .m-menu__overlay {
+    display: block;
+}
+nav .m-menu__checkbox:checked ~ .m-menu {
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #242424;
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+    padding: 10px 0px;
+}
+.responsive-menu-area{
+    width: 100%;
+}
+label img{
+    width: 100%;
+}
+
+/* ===============================
+    MAIN THEME STYLE START HERE
+================================== */
+header.header{
+    background: url('../images/header-bg-01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1080px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #FF006B;
+}
+.menu{
+    padding: 15px 0px;
+    transition: .5s;
+}
+.is-sticky .menu{
+    background: linear-gradient(97.48deg, #020129 27.37%, #FF006B 89.22%);
+    padding: 10px 0px;
+    transition: .5s;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: #fff;
+    font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link.btn.btn-primary{
+    margin-top: 5px;
+    margin-right: 0px;
+}
+.navbar-light .navbar-nav .nav-link.dropdown-toggle{
+    margin-right: 0;
+}
+header .menu .dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    max-height: 500px;
+    margin-top:10px;
+    box-shadow: 0 5px 40px 0px rgba(57, 73, 76, 0.10);
+}
+header .menu .dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #020129;
+    min-width: 150px;
+    border-radius: 0;
+    padding: 0;
+    padding: 15px 0px;
+    margin-top: -2px;
+    display: block;
+    visibility: hidden;
+    opacity: .1;
+    max-height: 0px;
+	border: none;
+}
+header .menu .dropdown .dropdown-menu .dropdown-item {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 25px !important;
+    background: transparent;
+}
+header .menu .dropdown .dropdown-menu .dropdown-item:hover {
+    color: #EA0066;
+}
+header .menu .dropdown .dropdown-menu .dropdown:hover .dropdown-menu {
+    max-height: 500px;
+    visibility: visible;
+    opacity: 1;
+}
+header .menu .dropdown .dropdown-menu .dropdown .dropdown-menu {
+    border-left: 1px solid #f1f1f1;
+    left: 185px;
+    top: -13px;
+    padding: 15px 0px;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0px;
+}
+.btn.btn-primary.nft-btn{
+    color: #fff;
+    background: #EA0066;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    text-transform: capitalize;
+    width: 150px;
+    padding: 10px;
+}
+.btn.btn-primary.nft-btn:hover{
+    color: #fff;
+}
+#user-drop img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.dropdown-toggle::after{display: none;}
+/* header-wrap */
+.header-wrap{
+    padding-top: 160px;
+}
+.header-wrap .header-text{
+    position: relative;
+}
+.header-wrap .header-text h1{
+    font-size: 70px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 88px;
+    margin-bottom: 30px;
+}
+.header-wrap .header-text h1 span{
+    color: #EA0066;
+}
+.header-btn{
+    margin: 30px 0px;
+}
+.header-wrap .header-text p{
+    font-size: 18px;
+    width: 90%;
+}
+.main-counter{
+    text-align: center;
+    width: 150px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+.main-counter span{
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+.main-counter p{
+    font-size: 16px;
+    color: #fff;
+    width: 100% !important;
+}
+.header-img-area{
+    text-align: right;
+    position: relative;
+}
+
+.header-img-01:before{
+    border: 2px solid #fff;
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: -20px;
+    width: 70%;
+    height: 90%;
+    border-radius: 15px;
+    transition: .5s;
+    z-index: 5;
+}
+.header-img-01:hover::before{
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+.header-img-02{
+    position: absolute;
+    left: -20%;
+    bottom: -50%;
+    cursor: pointer;
+    animation: u 2s infinite;
+}
+@keyframes u{
+    0%{ bottom: -50%;}
+    60%{bottom: -40%;}
+}
+.header-img-02:before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 90%;
+    width: 90%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    transition: .5s;
+}
+.header-img-02:hover::before{
+    top: -10px;
+    left: -10px;
+    height: 100%;
+    width: 100%;
+    transition: .5s;
+}
+.header-img-03{
+    position: absolute;
+    right: -10%;
+    bottom: -50%;
+    cursor: pointer;
+    animation: l 2s infinite;
+}
+@keyframes l{
+    0%{right: -10%;}
+    60%{right: -0%;}
+}
+.header-img-03:before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    height: 110%;
+    width: 110%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    transition: .5s;
+}
+.header-img-03:hover::before{
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    transition: .5s;
+}
+/*  */
+
+
+
+.modal-body form input{
+    width: 90%;
+}
+.live-action-area{
+    position: relative;
+}
+.wallet, .live-action-area{
+    background-image: linear-gradient(to right, #03032a, #03022a, #030229, #020129, #020129);
+}
+.wallet .section-title p{
+    width: 40%;
+}
+.single-wallet{
+    border-width: 1px;
+    border-style: solid;
+    border-image: conic-gradient(#FF006B, #020129, #e70d68, #7a0a38, #FF006B, #FF006B, #8f0d43) 1;
+    text-align: center;
+    padding: 40px 0px 40px 0px ;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+.single-wallet:hover{
+    -webkit-box-shadow: 0px 0px 27px -9px rgba(255,0,107,1);
+    -moz-box-shadow: 0px 0px 27px -9px rgba(255,0,107,1);
+    box-shadow: 0px 0px 27px -9px rgba(255,0,107,1);
+    border-image: none;
+    transition: .5s;
+}
+.single-wallet h4{
+    font-size: 24px;
+    color: #fff;
+    margin-top: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+/* ===================
+    Action Area
+====================== */
+.live-action-area .section-title{
+    margin-bottom: 20px;
+}
+.action-btn{
+    margin-bottom: 30px;
+    margin-right: 30px
+}
+.action-btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.action-slider-bottom{
+    color: #fff;
+    padding: 90px 20px 30px 20px;
+    border: 1px solid #e70d68;
+    border-top: 1px solid transparent;
+    border-radius: 0px 0px 0px 80px;
+    background-image: linear-gradient(to bottom, #46003b, #36053a, #270836, #180731, #0b012b);
+    
+}
+.slider-team:hover .action-slider-bottom{
+    -webkit-box-shadow: 0px 2px 20px 0px rgba(255,0,107,1);
+    -moz-box-shadow: 0px 2px 20px 0px rgba(255,0,107,1);
+    box-shadow: 0px 2px 20px 0px rgba(255,0,107,1);
+    cursor: pointer;
+}
+.slider-img{
+    margin-bottom: -60px;
+    position: relative;
+}
+.time{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.slider-top span{
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.slider-middle{
+    margin: 20px 0px;
+}
+.slider-middle h4{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+.slider-middle ul li {
+    font-size: 20px;
+    color: #FFC700;
+}
+.action-slider.owl-carousel.owl-theme .owl-dots .owl-dot span{
+    width: 100px;
+    height: 12px;
+}
+.action-slider.owl-carousel.owl-theme .owl-dots .owl-dot.active span{
+    background: #e70d68;
+}
+ .timer li {
+    display: inline-block;
+    height: 70px;
+    width: 60px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+ .timer .day-css {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: -2px;
+}
+/* =====================
+===================== */
+.art-work{
+    position: relative;
+}
+.shape-area{
+    position: absolute;
+    top: -10%;
+    right: 0;
+    z-index: -1;
+}
+#art-work .section-title{ 
+  text-align: center;
+}
+#art-work .select-area select, #art-work .select-area input{
+    background: linear-gradient(255.61deg, #FF006B -0.19%, #00E0FF 91.61%);
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: transparent;
+    margin-right: 15px;
+    margin-top: 30px;
+}
+#art-work .select-area input{
+    background: linear-gradient(255.61deg, #FF006B -0.19%, #00E0FF 91.61%);
+}
+
+#art-work .select-area select option{
+   background:  #0b012b;
+}
+.single-art-work{
+    border: 2px solid #FF006B;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.single-art-img {
+    height: 350px;
+    overflow: hidden;
+}
+.single-art-img img{
+    width: 100%;
+}
+.single-art-top{
+    position: relative;
+}
+.single-art-reaction-btn{
+    position: absolute;
+    top: 0px;
+    transition: .5s;
+    opacity: 0;
+    left: 10px;
+    visibility: hidden;
+}
+.single-art-reaction-icon {
+    position: absolute;
+    top: 25px; 
+    right: 10px;  
+}
+.single-art-reaction-icon i{
+    font-size: 18px;
+    color: #fff;
+}
+.single-art-reaction-btn .price-bid{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    background: linear-gradient(255.61deg, #FF006B -0.19%, #00E0FF 91.61%);
+    opacity: 0.80;
+    padding: 8px 30px;
+    border-radius: 25px;
+}
+.single-art-bottom{
+    padding: 10px 20px 20px 15px;
+}
+.single-art-bottom .slider-top-img span{
+    color: #fff;
+    margin-top: 5px;
+}
+.slider-top-img.d-flex img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.single-art-middle{
+    padding: 10px 0px;
+}
+.single-art-middle h4, .left h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+.single-art-middle ul li {
+    color: #FFC700;
+}
+.left span{font-size: 11px;}
+.right p{
+    font-size: 13px;
+    margin-top: 10px;
+}
+.left span, .fa-ellipsis-vertical{
+    color: #fff;
+}
+.single-art-work:hover h4{
+    color: #EA0066;
+}
+.single-art-work:hover .single-art-reaction-btn{
+    visibility: visible;
+    transition: .5s;
+    top: 25px;
+    opacity: 1;
+}
+.single-art-work:hover .single-art-reaction-icon i{
+    color: #FF006B;
+}
+.dropdown-menu{
+    min-width: 3rem;
+    background: #010007;
+    
+}
+.dropdown-item{
+    color: #fff;
+}
+/* =====================
+    Art Work End
+===================== */
+.seller{
+    position: relative;
+}
+.seller .shape-area{
+    bottom: -30%;
+}
+.seller .section-title{
+    text-align: center;
+}
+.seller-label{
+    font-size: 15px;
+    color: #fff;
+    margin-right: 15px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.seller .section-title select{
+    padding: 10px 20px;
+    color: #fff;
+    background: #010007;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.seller-item{
+    border: 2px solid #e70d68;
+    background: #020129;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    height: 200px;
+    cursor: pointer;
+}
+.seller-item:before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background: #FF006B;
+    z-index: -1;
+    transition: .5s;
+}
+.seller-item:hover::before{
+    height: 70%;
+    transition: .5s;
+}
+.seller-item .seller-text h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.seller-text{
+    margin-top: 10px;
+}
+.seller-slider.owl-carousel .owl-item img {
+    display: block;
+    width: 80px;
+    margin: 0px auto;
+}
+.owl-theme .owl-nav {
+    margin-top: 30px;
+}
+.seller-slider.owl-carousel .fa-arrow-left-long, .seller-slider.owl-carousel .fa-arrow-right-long{
+    color: #fff;
+    background: linear-gradient(265.87deg, #00E0FF -46.33%, #FF006B 138.69%);
+    padding: 10px;
+    border-radius: 50%;
+}
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+}
+/* =====================
+    Seller End
+===================== */
+.popular-collection .section-title{
+    text-align: center;
+}
+.single-collection{
+    padding: 30px 10px 20px 10px;
+    background: rgba(255, 0, 107, 0.17);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+}
+.single-collection:hover{
+    background: rgba(255, 0, 107, 0.34);
+}
+.collection-img img{
+    width: 100%;
+    transform: scale(.95);
+    transition: .5s;
+}
+.collection-text .d-flex.justify-content-between{
+    padding: 20px 0px 20px 0px;
+}
+.collection-text .dropdown-area{
+    margin-top: 5px;
+}
+.collection-text h4{
+    margin-top: 12px;
+    color: #fff;
+}
+.collection-btn{
+    text-align: center;   
+}
+.collection-btn .nft-commmon-btn{
+    margin-right: 0px;
+    background: #010007;
+    color: #fff;
+    font-weight: 400;
+    border: transparent;
+    transition: .5s;
+}
+.single-collection .collection-btn .nft-commmon-btn {
+    padding: 10px 35px;
+}
+.single-collection:hover .nft-commmon-btn{
+    background: linear-gradient(180deg, #FF006B 0%, #E3197B 0.01%, #00E0FF 100%);
+    transition: .5s;
+}
+.single-collection:hover img{
+    transform: scale(1);
+    transition: .5s;
+}
+.more-btn.collection-btn{
+    padding: 50px;
+}
+.more-btn.collection-btn .nft-commmon-btn{
+    background: linear-gradient(99.44deg, #FF006B 4.12%, #00E0FF 70.99%);
+}
+/* =========================
+    Popular Collection End
+============================ */
+.sellyour-nft .section-title{
+    text-align: center;
+}
+.sellyour-nft .section-title p{
+    width: 50%;
+    margin: 0px auto;
+}
+.single-nft-sell{
+    padding: 20px 20px;
+    background: linear-gradient(106.53deg, #FF006B 1.06%, #00E0FF 84.54%);
+    text-align: center;
+    border-radius: 0px 25px 0px 25px;
+    position: relative;
+    cursor: pointer;
+}
+.single-nft-sell:hover{
+    background: rgba(255, 0, 107, 0.17);
+}
+.single-nft-sell .sell-ntf-text h4{
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding: 15px 0px;
+}
+.single-nft-sell .sell-ntf-text p{
+    font-size: 15px;
+    line-height: 28px;
+}
+.step{
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+.step h3{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+}
+.step h3 span{
+    font-size: 18px;
+}
+.arrow{
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+.arrow i{
+    font-size: 24px;
+    color: #fff;
+}
+/* =========================
+    Sellyour-nft End
+============================ */
+.nft-art{
+    padding: 120px 0px;
+}
+.nft-art-text span, .sell-rareart span{
+    color: #FF006B;
+}
+.nft-art-text h2, .sell-rareart h2{
+    font-size: 55px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.nft-art-text{
+    min-height: 500px;
+    display: flex;
+    padding-left: 100px;
+    align-items: center;
+}
+.nft-art-text .nft-commmon-btn{
+    padding: 15px 45px;
+}
+.nft-art-main-img{position: relative;}
+.nft-art-main-img img{
+    width: 100%;
+}
+.shape-one{
+    position: absolute;
+    top: 60px;
+    right: 150px;
+}
+.shape-two{
+    position: absolute;
+    bottom: -40px;
+    left: 100px;
+}
+/* =========================
+    Sellyour-nft End
+============================ */
+.sell-rareart{
+    background: linear-gradient(94.48deg, rgba(255, 0, 107, 0.25) 22.9%, rgba(0, 224, 255, 0.155) 88.36%);
+    padding: 120px 0px;
+    text-align: center;
+}
+.sell-rareart h2{
+    width: 73%;
+    margin: 0px auto;
+    padding-bottom: 10px;
+}
+.sell-rareart p{
+    width: 60%;
+    margin: 0px auto;
+    padding-bottom: 60px;
+    line-height: 30px;
+}
+.sell-rareart a{
+    font-size: 16px;
+    padding: 15px 45px;
+}
+.btn-primary.nft-commmon-btn.two{
+    background: #020129;
+    border: 1px solid #FF006B;
+    color: #fff;
+}
+.btn-primary.nft-commmon-btn.two:hover{
+    background: #FF006B;
+}
+/* =========================
+    Sell rareart End
+============================ */
+footer{
+    padding: 120px 0px;
+}
+.footer-logo p{
+    padding: 30px 0px 0px 0px;
+    opacity: 0.7;
+}
+.copyright {
+    border-top: 1px solid #28153c;
+    margin-top: 50px;
+}
+.copyright p{
+    text-align: center;
+    opacity: .7;
+    padding-top: 15px;
+}
+.copyright a{
+    color: #fff;
+    opacity: .7;
+}
+footer ul li{
+    margin-right: 15px;
+}
+footer ul li i {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: .5s;
+}
+footer ul li i:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+footer .footer-link h4{
+    font-size: 25px;
+    color: #fff;
+    margin: 10px 0px 30px 0px;
+    font-family: 'Inter', sans-serif;
+}
+footer .footer-link ul li{
+    margin: 15px;
+}
+footer .footer-link ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+    opacity: 0.7;
+}
+footer .footer-link ul li a:hover{
+    padding-left: 10px;
+    transition: .5s;
+}
+.fa-facebook-f:hover {
+    color: rgb(59, 89, 152);
+}
+.fa-linkedin-in:hover {
+    color: rgb(10, 102, 194);
+}
+.fa-twitter:hover {
+    color: rgb(29, 161, 242);
+}
+.fa-instagram:hover {
+    color: rgb(195, 42, 163);
+}
+.footer-form {
+    margin-top: 30px;
+    text-align: center;
+    margin-left: -38px;
+}
+.footer-form input{
+    padding: 15px 20px;
+    background: #fff;
+    font-weight: 700;
+}
+::placeholder{
+    color: #010007;
+    font-weight: 600;
+}
+.footer-form ::placeholder{
+    color: #e3e3e3;
+}
+.footer-form input[type="text"]{
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    color: #fff;
+    outline: 0;
+    border: none;
+}
+.footer-form input[type="submit"] {
+    background: #FF006B;
+    color: #fff;
+    font-weight: 700;
+    width: 235px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+.footer-link ul.instrapost li {
+    width: 22%;
+    float: left;
+    margin: 0px 10px 10px 0px ;
+}
+.instrapost li img{
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+}
+footer .footer-link ul.instrapost li a:hover{
+    padding-left: 5px;
+    transition: .5s;
+}
+/* =========================
+    Footer End
+============================ */
+
+/* =============================
+    Other Page Design
+================================= */
+.header.homepagetwo{
+    position: relative;
+    background: transparent;
+}
+.header.homepagetwo:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/index-two/headertwo.png');
+    z-index: -1;
+}
+.header.homepagetwo h1{
+    font-size: 55px;
+    color: #fff;
+    margin-bottom: 35px;
+}
+.header.homepagetwo .header-wrap{
+    padding-top: 120px;
+}
+.header.homepagetwo .header-top img{
+    width: 100%;
+}
+.header.homepagetwo .header-img{
+    position: relative;
+}
+.header.homepagetwo .header-img:before{
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 30px;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    z-index: -1;
+}
+.header-top-seller{
+    padding-left: 100px;
+}
+.header-top-seller h4{
+    font-size: 35px;
+    color: #fff;
+}
+.seller-label{
+    font-size: 15px;
+    color: #fff;
+    margin-right: 15px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.select-area select{
+    padding: 10px 20px;
+    color: #fff;
+    background: #010007;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.main-seller-area{
+    margin-top: 15px;
+}
+.seller-img img{
+    width: 80px !important;
+}
+.seller-info {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 70%;
+    padding:  10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.seller-info p{
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.seller-info p:nth-child(2) {
+    font-weight: 400;
+    font-size: 18px;
+}
+.follow-btn .follow{
+    background: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #020129;
+    font-size: 13px;
+    border-radius: 30px;
+}
+.main-seller-area:hover .seller-info p,.main-seller-area:hover .follow-btn span{
+    color: #00E0FF;
+}
+.main-seller-area:hover .follow-btn .follow{
+    background: #00E0FF;
+}
+.follow-btn span{
+    display: block;
+    padding-top: 10px;
+    color: #fff;
+}
+.homepagetwo-slider {
+    margin-top: 60px;
+}
+.homepage-slider-item{
+    position: relative;
+}
+.homepagetwo-slider.owl-carousel.owl-theme .fa-arrow-right-long{
+    position: absolute;
+    top: 32%;
+    right: -20px;
+    background: #020129;
+    color: #fff;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.homepagetwo-slider.owl-carousel.owl-theme .fa-arrow-left-long{
+    position: absolute;
+    top: 32%;
+    left: -20px;
+    background: #020129;
+    color: #fff;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+/* ====================
+    homepagetwo-slider
+======================= */
+.wallet.homepagetwo .single-wallet{
+    border-image: conic-gradient(#00E0FF, #020129, #00E0FF, #00E0FF, #00E0FF, #00E0FF, #11c2d9) 1;
+}
+.wallet.homepagetwo .single-wallet:hover{
+    box-shadow: 0px 0px 27px -9px rgb(13, 148, 221);
+}
+/* =====================
+    Homepage two wallet
+======================== */
+.homepagetwo.counter-area{
+    background: url('../images/index-two/homepagetwo-counter.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 160px 0px;
+}
+.homepagetwo.counter-area .counter-main{
+    text-align: center;
+    margin-right: 150px;
+}
+.homepagetwo.counter-area .counter-main:nth-child(3){
+    margin-right: 0;
+}
+.homepagetwo.counter-area .counter-main .counter{
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+}
+.homepagetwo.counter-area .counter-main span{
+    color: #fff;
+    font-size: 20px;
+}
+/* ==================
+Homepage Two Counter
+===================== */
+.art-work.homepagetwo .follow-btn{
+    margin-top: 10px;
+}
+.art-work.homepagetwo .follow-btn a{
+    font-weight: 600;
+    color: #333;
+    padding: 8px 15px;
+}
+.art-work.homepagetwo .single-art-work:hover h4{
+    color: #00E0FF;
+}
+.art-work.homepagetwo .single-art-work{
+    border: 2px solid #00E0FF;
+}
+.art-work.homepagetwo .more-btn.collection-btn a{
+    background: #fff;
+    color: #010007;
+    font-weight: 600;
+}
+.art-work.homepagetwo .more-btn.collection-btn a:hover{
+    background: #FF006B;
+    color: #fff;
+}
+.homepagetwoaction-slider .action-slider-bottom{
+    border-radius: 0;
+    border: transparent;
+}
+.homepagetwoaction-slider .slider-team{
+    border: 2px solid #00E0FF;
+    overflow: hidden;
+}
+.homepagetwo.topcreator .section-title{
+    text-align: center;
+}
+.homepagetwo.topcreator .topcreator-item{
+    border: 2px solid #00E0FF;
+    border-top-left-radius: 50px;
+    overflow: hidden;
+}
+.topcreator-slider.owl-carousel .owl-item .main-img img{
+    width: 100%;
+}
+.topcreator-slider.owl-carousel .owl-item .author-img img{
+    width: 100px;
+    margin: 0px auto;
+    margin-top: -50px;
+}
+.topcreator-info{
+    padding: 30px 20px;
+    cursor: pointer;
+}
+.topcreator-info .topcreator-name{
+    margin-bottom: 15px;
+}
+.topcreator-info .topcreator-name:nth-child(2){
+    margin-bottom: 0;
+}
+.topcreator-info .topcreator-name h4{
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+.topcreator-info .topcreator-name h4 span{
+    font-size: 12px;
+    font-weight: 400;
+    color: #00E0FF;
+    display: block;
+}
+.topcreator-info .topcreator-name a{
+    color: #fff;
+    text-decoration: none;
+}
+.topcreator-info .topcreator-name a:hover, .topcreator-item:hover h4 {
+    color: #00E0FF;
+}
+.topcreator-slider.owl-carousel.owl-theme .owl-dots .owl-dot span {
+    width: 100px;
+    height: 12px;
+}
+/* ======================Top Creator====================== */
+.homepagetwo.sellyour-nft .single-nft-sell{
+    border-radius: 0;
+    background: linear-gradient(106.53deg, #020129 1.06%, #00E0FF 84.54%);
+    position: relative;
+}
+.homepagetwo.sellyour-nft .single-nft-sell:before{
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(118.18deg, #00E0FF 27.35%, #020129 121.72%);
+    z-index: -1;
+    opacity: 0;
+    transition: .5s;
+}
+.homepagetwo.sellyour-nft .single-nft-sell:hover:before{
+    bottom: -15px;
+    left: 15px;
+    transition: .5s;
+    opacity: .5;
+}
+.homepagetwo.nft-art .nft-art-main-img{
+    height: 450px;
+}
+.homepagetwo.nft-art .nft-art-main-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.homepagetwo.nft-art .nft-art-text{
+    min-height: 450px;
+}
+.homepagetwo.nft-art .nft-art-text .nft-item p{
+    margin-bottom: 40px;
+}
+.block-element{
+    display: block;
+}
+.single-nft-art{
+    margin-top: 30px;
+    border: 2px solid #00E0FF;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 450px;
+}
+.single-nft-art img{
+    width: 100%;
+}
+.homepagetwo.sell-rareart{
+    text-align: left;
+}
+.homepagetwo.sell-rareart h2, .homepagetwo.sell-rareart p{
+    width: 80%;
+    text-align: left;
+    margin: 0;
+}
+.video-main-area{
+    position: relative;
+}
+.video-main-area:before{
+    position: absolute;
+    content: "";
+    top: 50px;
+    right: -25px;
+    width: 300px;
+    height: 80%;
+    background: #FF006B;
+    z-index: -1;
+    border-radius: 30px;
+}
+.fa-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #FF006B;
+    background: #fff;
+    padding: 17px 22px 17px 24px;
+    border-radius: 50%;
+    border: 1px solid ;
+}
+/* =======================
+    Video Play
+========================== */
+/* =============================
+    Homepage Three
+================================ */
+.header.homepagethree{
+    background: url('../images/index-three/header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 950px;
+}
+.header-img img{
+    width: 600px;
+}
+.header-img{
+    position: relative;
+}
+.header-three-img-shape{
+    position: absolute;
+    top: 35%;
+    left: -67px;
+    animation: shapeone 1s infinite;
+}
+@keyframes shapeone {
+    10%{ top: 35%;}
+    50%{ top: 38%;}
+}
+.header-three-img-shape img{
+    width: 200px;
+}
+.homepagethree-slider.owl-carousel.owl-theme{
+    margin-top: -40px;
+}
+.homepagethree-slider.owl-carousel.owl-theme .single-art-work {
+    border-radius: 40px 40px 0px 0px;
+    border: transparent;
+}
+.homepagethree-slider.owl-carousel.owl-theme .single-art-work .single-art-bottom{
+    background: linear-gradient(180deg, #00E0FF 2.31%, #020129 101.55%);
+    box-shadow: 0px 0px 70px rgba(0, 224, 255, 0.23);
+}
+.homepagethree-slider.owl-carousel.owl-theme .single-art-work .single-art-reaction-icon{
+    position: static;
+}
+.homepagethree-slider.owl-carousel.owl-theme .single-art-work:hover h4{
+    color: #fff;
+}
+.homepagethree-slider.owl-carousel.owl-theme .owl-dots .owl-dot span{
+    width: 100px;
+    height: 12px;
+}
+.homepagethree-slider.owl-carousel.owl-theme .single-art-work:hover{
+    -webkit-box-shadow: 0px 0px 54px -19px rgba(153,142,153,1);
+    -moz-box-shadow: 0px 0px 54px -19px rgba(153,142,153,1);
+    box-shadow: 0px 0px 54px -19px rgba(153,142,153,1);
+}
+.homepagethree-slider .single-art-work:hover .single-art-reaction-icon i{
+    color: #FFC700;
+}
+/* ========Homepage Three Slider=========== */
+.new-item-img img{
+    height: 100%;
+    width: 100%;
+}
+.new-item-img{
+    height: 250px;
+    border-radius: 60px 0px;
+}
+.single-new-item .single-art-bottom h4{
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+.single-new-item .single-art-bottom .right p{
+    margin-top: 0;
+}
+.single-new-item .single-art-bottom ul li{
+    color: #FFC700;
+}
+.single-new-item{
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.single-new-item::before{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: #00E0FF;
+    border-radius: 60px 0px;
+    z-index: -1;
+    opacity: 0;
+    transition: .5s;
+}
+.single-new-item:hover::before{
+    top: -10px;
+    left: 10px;
+    opacity: 1;
+    transition: .5s;
+}
+.single-new-item .single-art-bottom {
+    position: absolute;
+    border-radius: 0px 0px 60px 0px;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+}
+.single-new-item .single-art-bottom:before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background: #FF006B;
+    border-radius: 0px 0px 60px 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+}
+.single-new-item .single-art-reaction-icon i{
+    background: #010007;
+    padding: 5px;
+    font-size: 12px;
+}
+.single-wallet.walletone{
+    background: #015f83;
+    border: none;
+}
+.single-wallet.walletwo{
+    background: #6c0145;
+    border: none;
+}
+.single-wallet.walletone:hover, .single-wallet.walletwo:hover{
+    background: #00e0ff;
+}
+/* ===========single wallet================= */
+.topseller.homepagethree .section-title{
+    text-align: center;
+}
+.item-img{
+    margin-right: 20px;
+}
+.top-seller-slider.owl-carousel .fa-arrow-left-long, .top-seller-slider.owl-carousel .fa-arrow-right-long{
+    color: #fff;
+    background: #00E0FF;
+    padding: 10px;
+    border-radius: 50%;
+}
+/* Homepage three nft art */
+.homepagetwo.homepagethree.nft-art{
+    position: relative;
+    margin-top: 120px;
+}
+.homepagetwo.homepagethree.nft-art:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    background: linear-gradient(211.21deg, rgba(0, 224, 255, 0.52) 21.82%, rgba(255, 0, 107, 0.52) 118.22%);
+    border-radius: 0px 150px 150px 0px; 
+}
+.homepagetwo.homepagethree.nft-art .nft-art-text{
+    min-height: 500px;
+}
+.homepagetwo.homepagethree.nft-art .nft-art-main-img{
+    height: 550px;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.homepagetwo.homepagethree.nft-art .nft-art-main-img img{
+    height: 100%;  
+}
+.homepagetwo.homepagethree.nft-art .video-main-area:before{
+    background: transparent;
+}
+/* homepage three sellyour nft */
+.homepagetwo.homepagethree.sellyour-nft{
+    padding: 140px 0px;
+}
+.homepagetwo.homepagethree.sellyour-nft .single-nft-sell, .homepagetwo.homepagethree.sellyour-nft .single-nft-sell::before{
+    background: transparent;
+}
+.homepagetwo.homepagethree.sellyour-nft .step{
+    display: none;
+}
+.homepagetwo.homepagethree.sellyour-nft .single-nft-sell:hover{
+    background: linear-gradient(106.53deg, #020129 1.06%, #00E0FF 84.54%);
+    transition: .5s;
+}
+.homepagetwo.homepagethree.sell-rareart{
+    background: linear-gradient(98.1deg, rgba(2, 1, 41, 0.55) 23.09%, rgba(0, 224, 255, 0.55) 60.33%);
+}
+.homepagetwo.homepagethree.sell-rareart .video-main-area::before{
+    background: #fff;
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    right: 0;
+    top: -12px;
+}
+.homepagetwo.homepagethree.sell-rareart .video-main-area::after{
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    left: 0;
+    bottom: 50px;
+}
+/* ===============================
+    Art Work
+================================== */
+.header.art-workpage{
+    background: url('../images/innerpage/inner-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+}
+.header.art-workpage .header-wrap{
+    padding-top: 0;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+}
+.header.art-workpage .header-wrap .header-text h1 {
+    margin-bottom: 0;
+}
+.art-work.art-workpage.homepagetwo{
+    padding: 140px 0px;
+}
+li.breadcrumb-item a{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #D2D2D2;
+}
+.breadcrumb-item.active {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.innerpage-pagination .page-link{
+    background: #58576f;
+    padding: 10px 15px;
+    color: #fff;
+    margin-right: 15px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    border: transparent;
+}
+.innerpage-pagination .page-link:hover{
+    background: #00E0FF;
+}
+.page-item:first-child .page-link, .page-item:last-child .page-link {
+    border-radius: 3px;
+}
+.page-item.active .page-link{
+    background: #00E0FF;
+    border: transparent;
+}
+.inner-search{
+    width: 250px;
+    border: 1px solid #00E0FF;
+    padding: 0px 0px;
+    border-radius: 25px;
+    height: 45px;
+    margin-top: 30px;
+}
+.inner-search input{
+    padding: 8px;
+    background:transparent;
+    border: transparent;
+    color: #fff;
+}
+::placeholder, .fa-magnifying-glass{
+    color: #fff;
+    font-size: 16px;
+}
+.sellyour-nft.innerpage{
+    padding: 0px 0px 140px 0px;
+}
+/* ============= */
+.single-user-img{
+    background: linear-gradient(180deg, #FF006B 2.31%, #020129 101.55%);
+    border: 1px solid #FF006B;
+    box-shadow: 0px 0px 66px rgba(255, 0, 107, 0.47);
+    min-height: 600px;
+    border-radius: 0px 25px;
+    padding: 20px;
+    position: relative;
+}
+.single-user-img a{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-0%, -50%);
+    transition: .5s;
+    background: #00E0FF;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    visibility: hidden;
+    opacity: 0;
+}
+.single-user-img a:hover{
+    background: linear-gradient(180deg, #FF006B 2.31%, #020129 101.55%);
+    transition: .5s;
+    border: 1px solid transparent;
+}
+.single-user-img:hover a{
+    visibility: visible;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+.single-user-img img{
+    width: 100%;
+}
+.single-user-info{
+    padding-left: 100px;
+}
+.single-user-info h2{
+    font-size: 40px;
+    color: #fff;
+}
+.single-ser-basic-info .d-flex img{
+    width: 45px;
+    height: 45px;
+}
+.single-ser-basic-info .d-flex span{
+    font-size: 12px;
+    color: #fff;
+}
+.breack{
+    display: block;
+}
+.slider-star.d-flex li{
+    color: #FFC700;
+}
+.slider-main-img img{
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+}
+.single-user-para p{
+    line-height: 40px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.single-user-info-bottom span{
+    color: #00E0FF;
+}
+.single-user-review{
+    margin-top: 15px;
+}
+.single-user-time{
+    position: relative;
+}
+.single-user-time{
+    padding: 20px 0px;
+    border: 2px solid #00E0FF;
+    margin: 30px 0px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 40px;  
+}
+.single-user-time .time{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    width: 100%;
+    transform: translate(-18%, -60%);
+}
+.single-user-time .timer li {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background: transparent;
+    margin: 0;
+    color: #ffffff;
+    padding: 10px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 0px;
+}
+.single-user-time p{
+    margin-bottom: 0;
+}
+.single-ser-basic-info{
+    padding: 20px 0px;
+}
+.single-user-btn a{
+    border-radius: 10px;
+}
+.single-user-btn .nft-commmon-btn{
+    background: #00E0FF;
+    color: #fff;
+}
+.single-user-btn .nft-commmon-btn:hover{
+    background: #EA0066;
+}
+
+.single-user-btn .nft-commmon-btn.two{
+    border: 1px solid #fff;
+}
+/*  */
+.user-pay-details-img{
+    min-height: 200px;
+    background: linear-gradient(180deg, #FF006B 2.31%, #020129 101.55%);
+    margin-bottom: 30px;
+    border-radius: 0px 40px;
+    padding: 10px;
+}
+.user-pay-details-img img{
+    width: 100%;
+    border-radius: 0px 40px;
+}
+.user-pay-history{
+    padding-left: 100px;
+}
+.user-pay-history .nav-tabs{
+    border-bottom: 1px solid transparent;
+    font-size: 20px;
+}
+.user-pay-history .nav-tabs .nav-link{
+    color: #fff;
+    padding: 0;
+    margin-right: 30px;
+}
+.user-pay-history .nav-tabs .nav-item.show .nav-link, .user-pay-history .nav-tabs .nav-link.active{
+    color: #E3197B;
+    background-color: transparent; 
+    border-color: transparent;
+}
+.bid-history-info{
+    padding-top: 40px;
+}
+.bid-history-info .main-seller-area {
+    margin-top: 15px;
+}
+.user-pay-history .nav-tabs .nav-link:hover{
+    border: 1px solid transparent;
+}
+/* ===================================
+====================================== */
+
+.header.art-workpage.popular-collectionpage{
+    background: url('../images/innerpage/inner-bg.png');
+}
+.homepagetwo.popular-collectionpage.owl-carousel .owl-item .author-img img{
+    width: 100px;
+    margin: 0px auto;
+    margin-top: -50px;
+}
+.single-popular-collection .main-img img{
+    width: 100%;
+}
+.single-popular-collection .author-img{
+    width: 100px;
+    margin: 0px auto;
+}
+.single-popular-collection .author-img img {
+    width: 100px;
+    margin: 0px auto;
+    margin-top: -50px;
+}
+.topcreator-item{
+    border: 2px solid #00E0FF;
+    border-top-left-radius: 50px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.sell-rareart span {
+    margin-top: 60px;
+    display: block;
+}
+.homepagetwo.homepagethree.popular-collectionpage.sellyour-nft{
+    padding: 0px 0px 140px 0px;
+}
+footer.popular-collectionpage{
+    background: linear-gradient(263.86deg, #020129 37.03%, #00E0FF 107.6%);
+}
+.single-collection{
+    margin-bottom: 30px;
+}
+/*  */
+
+.nft-art.aboutus .nft-item p{
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+.nft-art.aboutus .nft-art-text{
+    margin-top: 40px;
+}
+.about-video{
+    background: url('../images/gif-03.gif');
+    min-height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 140px;
+    border-radius: 15px;
+    position: relative;
+}
+/* Contact Page */
+
+.contact-page{
+    background: url('../images/innerpage/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+    padding: 120px 0px;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+
+}
+.contact-page::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    z-index: -1;
+    opacity: .6;
+}
+.contactpage-form, .loginform{
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: inset 0px 0px 7px -4px rgb(13 13 13);
+}
+.contactpage-form h4{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #270836;
+}
+.contactpage-form input, .contactpage-form textarea, .loginform input{
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    background: transparent;
+    border: transparent;
+    -webkit-box-shadow: inset 0px 0px 7px -4px rgb(13 13 13);
+    -moz-box-shadow: inset 0px 0px 7px -4px rgba(13,13,13,1);
+    box-shadow: inset 0px 0px 7px -4px rgb(13 13 13);
+}
+.contactpage-form ::placeholder, .contactpage-form ::placeholder, .loginform ::placeholder{
+    font-weight: 400;
+}
+.contactpage-form textarea{
+    height: 140px;
+}
+.contactpage-form input[type="submit"] , .loginform input[type="submit"] {
+    background: #FF006B;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.contactpage-form ::placeholder{
+    color: #270836;
+    font-weight: 400;
+}
+#map{
+    height: 500px;
+    padding: 40px 30px;
+    background: #270836;
+    border: 10px solid #fff;
+    box-shadow: inset 0px 0px 7px -4px rgb(13 13 13);
+}
+/* Log In Page */
+
+.main-page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.loginform{
+    width: 450px;
+    text-align: center;
+    overflow-y: scroll;
+}
+.loginform input::placeholder{
+    color: #270836;
+}
+.loginform img{
+    margin: 20px 0px;
+}
+.loginform a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #4b4b4b;
+}
+.login-methods .d-flex.justify-content-center{
+    background: #1777f2;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px 40px;
+    margin: 15px 0px;
+   
+}
+.login-methods .d-flex.justify-content-center a{
+    color: #fff;
+    margin-left: 20px;
+}
+.loginform p{
+    color: #270836;
+}
+.loginform p a{
+    color: #EA0066;
+    margin-left: 5px;
+}
+/* ================================
+    Blog Style
+==================================== */
+.blogpage{
+    background: linear-gradient(94.48deg, rgba(255, 0, 107, 0.25) 22.9%, rgba(0, 224, 255, 0.155) 88.36%);
+    padding: 120px 0px;
+}
+.singleblogpage{
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+    /* -webkit-box-shadow: 10px 10px 0px 0px rgba(51,51,74,1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(51,51,74,1);
+    box-shadow: 10px 10px 0px 0px rgba(51,51,74,1); */
+    margin-bottom: 30px;
+    height: 510px;
+}
+.blog-img {
+    overflow: hidden;
+    border-radius: 10px;
+    height: 270px;
+}
+.blog-img img{
+    width: 100%;
+    transition: .5s;
+}
+.blog-img img:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+.blog-text{
+    padding: 30px 20px 10px 20px;
+}
+.blog-text h4 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.blog-text span, .post-descripton span{
+    font-size: 15px;
+    color: #b2b0b0;
+}
+.blog-text p{
+    margin-top: 10px;
+    color: #565656;
+}
+.blog-text a, .post-descripton a{
+    text-decoration: none;
+    color: #484848;
+}
+.blogsearch{
+    background: #fff;
+    border-radius: 30px;
+}
+.blogsearch input{
+    border: transparent;
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: 88%;
+}
+.blogsearch input::placeholder{
+    color: #03032a;
+    font-weight: 500;
+}
+.blogsearch i{
+    color: #03032a;
+    margin-top: 15px;
+}
+.catagory, .top-post{
+    padding: 20px 25px;
+    margin: 30px 0px;
+    background: #fff;
+}
+.catagory h4, .top-post h4{
+    color: #484848;
+    font-weight: 700;
+}
+.catagory ul li{
+    padding: 10px 0px;
+    border-bottom: 1px solid #dddddd;
+}
+.catagory ul li a{
+    text-decoration: none;
+    color: #565656;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .5s;
+}
+section.blogpage.blogpost h2, section.blogpage.blogpost h3, .contactpage-form h4 {
+    color:  #484848;
+}
+.catagory ul li a:hover{
+    padding-left: 5px;
+    transition: .5s;
+    color: #EA0066;
+}
+.top-post .d-flex.justify-content-between{
+    margin-bottom: 15px;
+}
+.post-descripton span{
+    font-size: 14px;
+}
+.post-descripton h5{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 600;
+    margin-bottom: 0rem;
+}
+.post-title{
+    margin-right: 20px;
+}
+.post-title h4{
+    font-size: 34px; 
+    font-weight: 700;
+}
+.instragum-post li{
+    list-style-type: none;
+    float: left;
+    width: 30%;
+    margin: 0px 10px 10px 0px;
+}
+.instragum-post li img{
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+}
+.instragum-post h4{
+    color: #fff;
+}
+.instragum-post li:nth-child(3), .instragum-post li:nth-child(6){
+    margin-right: 0;
+}
+.blogpage.blogpost .main-blog{
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+.blogpage.blogpost .main-blog p{
+    color: #565656;
+}
+.blogpage.blogpost .main-blog p.italic{
+    font-style: italic;
+}
+.blogpage.blogpost .main-blog .thumbnail-img{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.blogpage.blogpost .main-blog .thumbnail-img img{
+    width: 100%;
+    height: 100%;
+}
+.blogpage.blogpost .main-blog h3{
+    margin: 30px 0px;
+}
+.share-option ul li{
+    margin-left: 20px;
+    padding: 10px ;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.share-option ul li i{
+    padding: 0;
+    font-size: 24px;
+    color: #EA0066;
+    background: transparent;
+}
+.blogpage.blogpost .contactpage-form{
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
